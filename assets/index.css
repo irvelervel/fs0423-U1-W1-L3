@@ -3,3 +3,8 @@
 p {
   font-size: 10px;
 }
+
+/* questa regola funzionerebbe e sovrascriverebbe il tag <style> in <head> :) */
+/* h3 {
+  color: lightseagreen;
+} */
