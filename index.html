@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics</title>
+    <style>
+      /* qui scrivo del CSS vero e proprio, formato da 2 parti: */
+      /* selettore { proprietà: valore } */
+      h3 {
+        color: palevioletred;
+      }
+    </style>
+    <!-- 3 -->
+    <link rel="stylesheet" href="assets/index.css" />
+    <!-- questo è un collegamento al file css contenuto nella cartella "assets" -->
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Fondamenti di CSS</h1>
+      </header>
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, culpa
+          omnis in exercitationem quidem sapiente labore dolorum nostrum enim
+          autem nesciunt sunt sint ex consequuntur adipisci provident eos et ut?
+        </p>
+        <h3>Raccontiamo una storia, personaggi:</h3>
+        <ul>
+          <li>Porcellino 1</li>
+          <!-- 1 -->
+          <li style="color: red; font-weight: bold">Porcellino 2</li>
+          <li>Porcellino 3</li>
+          <li>Lupo</li>
+        </ul>
+        <h3>Questo è un titolo di test</h3>
+        <img src="https://placekitten.com/300" alt="Gattino a caso" />
+      </main>
+    </div>
+  </body>
+</html>
+
+<!-- METODOLOGIE PER APPLICARE DEL CSS -->
+<!-- 1) INLINE sui tag (sconsigliato!) -->
+<!-- 2) INCORPORANDO un tag <style> nel tag <head> -->
+<!-- 3) ATTRAVERSO un file CSS ESTERNO (consigliato) -->
