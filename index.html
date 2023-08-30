@@ -51,6 +51,20 @@
       ul {
         font-size: 10px;
       }
+
+      #banner .special {
+        /* selezionerebbe tutti gli elementi dotati di class="special"
+        che però sono anche contemporaneamente FIGLI di un elemento con id="banner" */
+      }
+
+      main li {
+        /* tutti gli li di tutte le liste, perchè lo spazio è un selettore di discendenza "generico" */
+      }
+
+      p + h3 {
+        display: none;
+        /* tolgo l'h3 dalla pagina */
+      }
     </style>
     <!-- 3 -->
     <!-- questo è un collegamento al file css contenuto nella cartella "assets" -->
@@ -67,12 +81,13 @@
           omnis in exercitationem quidem sapiente labore dolorum nostrum enim
           autem nesciunt sunt sint ex consequuntur adipisci provident eos et ut?
         </p>
-        <h3>Raccontiamo una storia, personaggi:</h3>
+        <h3>1 - Raccontiamo una storia, personaggi:</h3>
+        <h3>2 - Raccontiamo una storia, personaggi:</h3>
         <ul>
-          <li>Porcellino 1</li>
+          <li class="uno due">Porcellino 1</li>
           <!-- 1 -->
           <li style="color: red; font-weight: bold">Porcellino 2</li>
-          <li>Porcellino 3</li>
+          <li class="uno">Porcellino 3</li>
           <!-- questo id, wolf, non lo posso riassegnare a nessun'altro tag html in questo documento -->
           <li id="wolf">Lupo</li>
         </ul>
